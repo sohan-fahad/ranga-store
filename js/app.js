@@ -18,12 +18,12 @@ const showProducts = (products) => {
     productDisplay.classList.add("product");
     productDisplay.innerHTML = `<div class="single-product">
       <div class= "img-section">
-    <img class="product-image img-fluid" src=${image}></img>
+      <img class="product-image img-fluid" src=${image}></img>
       </div>
-      <h4>${product.title.length < 30? product.title: product.title.slice(0, 25)}</h4>
+      <h5>${product.title.length < 25? product.title: product.title.slice(0, 25)}</h5>
       <p>Category: ${product.category}</p>
-      <h4><span class="text-danger">Rating: ${rate}</span> || <span class="text-primary">Reviews: ${count}</span?</h4>
-      <h4 class="text-danger">Price: $ ${product.price}</h4>
+      <p class="fs-5"><span class="text-danger">Rating: ${rate}</span> || <span class="text-primary">Reviews: ${count}</span?</p>
+      <h5 class="text-danger">Price: $ ${product.price}</h5>
       <button onclick="addToCart(${product.id},${product.price})" id="addToCart-btn" class="add-cart">add to cart</button>
       <button onclick="itemDetails(${product.id})" class="detail-btn">Details</button></div>
       `;
