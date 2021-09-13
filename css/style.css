@@ -20,6 +20,7 @@ body {
   height: 100%;
   border: none;
   padding: 0 10px;
+  font-size: 14px;
 }
 
 .search-field:focus {
@@ -138,6 +139,9 @@ body {
 
 /* Media Quary for medium device */
 @media only screen and (max-width: 768px) {
+  .searchContainer {
+    width: 80%;
+  }
   #all-products {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -157,6 +161,9 @@ body {
 
 /* Media Quary for small device */
 @media only screen and (max-width: 468px) {
+  .searchContainer {
+    width: 80%;
+  }
   #all-products {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

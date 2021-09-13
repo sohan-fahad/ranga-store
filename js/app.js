@@ -20,7 +20,7 @@ const showProducts = (products) => {
       <div class= "img-section">
     <img class="product-image img-fluid" src=${image}></img>
       </div>
-      <h4>${product.title.slice(0, 25)}</h4>
+      <h4>${product.title.length < 30? product.title: product.title.slice(0, 25)}</h4>
       <p>Category: ${product.category}</p>
       <h4><span class="text-danger">Rating: ${rate}</span> || <span class="text-primary">Reviews: ${count}</span?</h4>
       <h4 class="text-danger">Price: $ ${product.price}</h4>
